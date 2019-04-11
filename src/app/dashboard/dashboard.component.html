@@ -1,0 +1,14 @@
+<div id="wrapper" [ngClass]="{'toggled':isClosed}">
+  <app-header></app-header>
+  <div class="overlay" [ngClass]="{'hide':!isClosed,'show':isClosed}"></div>
+  <div *ngIf="isLoginDone">
+    <app-side-bar [isClosed]="isClosed"></app-side-bar>
+  </div>
+
+  <div id="page-content-wrapper">
+    <button type="button" class="hamburger is-closed" *ngIf="isLoginDone" data-toggle="offcanvas"
+      (mouseenter)="isClosed=!isClosed"></button>
+    <!-- <span class="hamb-top"></span> -->
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+[
+    {
+      "title": "Dashboard",
+      "route": "/dashboard",
+      "icon": "",
+      "isChildren": false
+    },
+    {
+      "title": "Operation",
+      "route": "/operation",
+      "icon": "",
+      "isChildren": true,
+      "childArray": [
+        {
+          "title": "Polling operation",
+          "route": "/polling",
+          "icon": "",
+          "isChildren": false
+        },
+        {
+          "title": "Other operation",
+          "route": "/other",
+          "icon": "",
+          "isChildren": false
+        }
+      ]
+    }
+  ]
